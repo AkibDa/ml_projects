@@ -35,7 +35,7 @@ Several machine learning classification algorithms were implemented and evaluate
 ```
 ├── Breast_Cancer_Detection.ipynb   # Main Jupyter Notebook with analysis and modeling
 |
-├── data.csv/                       # The dataset file
+├── data.csv                        # The dataset file
 |
 ├── requirements.txt                # Required Python libraries
 |
