@@ -84,17 +84,14 @@ To run this project on your local machine, follow these steps:
 
 The performance of each model was evaluated using standard classification metrics such as **Accuracy**, **Precision**, **Recall**, and **F1-Score**. A confusion matrix was also generated for each model to visualize its performance.
 
-|-------------------------------------------------------------------------|
-|Model Performance Comparison:                                            |
-|-------------------------------------------------------------------------|
-|Model                     | Accuracy  | Precision  | Recall   | F1-Score |
-|--------------------------|-----------|------------|----------|----------|                                                      
-|Logistic Regression       | 0.9239    |  0.9663    | 0.8776   | 0.9198   |
-|K-Nearest Neighbors       | 0.7259    |  0.7444    | 0.6837   | 0.7128   |
-|Support Vector Machine    | 0.5178    |  0.5152    | 0.5204   | 0.5178   |
-|Decision Tree             | 0.9086    |  0.9348    | 0.8776   | 0.9053   |
-|Random Forest             | 0.9289    |  0.9884    | 0.8673   | 0.9239   |
-|-------------------------------------------------------------------------|
+Model Performance Comparison:                                            
+| Model               | Accuracy | Precision | Recall | F1-Score |
+| ------------------- | :------: | :-------: | :----: | :------: |                                                     
+| Logistic Regression       | 0.9239    |  0.9663    | 0.8776   | 0.9198   |
+| K-Nearest Neighbors       | 0.7259    |  0.7444    | 0.6837   | 0.7128   |
+| Support Vector Machine    | 0.5178    |  0.5152    | 0.5204   | 0.5178   |
+| Decision Tree             | 0.9086    |  0.9348    | 0.8776   | 0.9053   |
+| Random Forest             | 0.9289    |  0.9884    | 0.8673   | 0.9239   |
 
 
 With an accuracy of **92.89%**, the **Random Forest** proved to be the most effective and robust model for this classification task.
