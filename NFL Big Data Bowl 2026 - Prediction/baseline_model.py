@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 
-# Load data
 train_dir = "data/train/"
 
 dfs = []
