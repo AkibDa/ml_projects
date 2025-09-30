@@ -15,14 +15,24 @@ train = pd.concat(dfs, ignore_index=True)
 
 fps = 10  
 
+median_frames = int(train["num_frames_output"].median())
+train["num_frames_output"] = train["num_frames_output"].fillna(median_frames)
+
 start_df = train[train["frame_id"] == 1].copy()
+
+start_df = start_df.dropna(subset=["s", "dir"])
 
 predictions = []
 
 for _, row in start_df.iterrows():
   x0, y0 = row["x"], row["y"]
   s = row["s"]
-  dir_rad = np.deg2rad(row["dir"])
+  dir_deg = row["dir"]
+  
+  if row["play_direction"] == "left":
+    dir_deg = (dir_deg + 180) % 360
+
+  dir_rad = np.deg2rad(dir_deg)
   
   vx = s * np.cos(dir_rad)
   vy = s * np.sin(dir_rad)
